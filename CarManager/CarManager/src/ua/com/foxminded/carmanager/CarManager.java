@@ -10,6 +10,8 @@ public class CarManager {
         Bus bus1 = new Bus("Ikarus", 1987, 9000, 30000, Color.ORANGE);
         Bus bus2 = new Bus("Ikarus", 1987, 9000, 30000, Color.ORANGE);
 
+        Combine com1 = new Combine("Friendship", 1999, 15499, 45000, Color.GREEN);
+
         pcar1.addDistance(100500);
         pcar1.addDistance(1);
         pcar1.addDistance(0.33);
@@ -20,6 +22,8 @@ public class CarManager {
         pcar3.maintenance();
 
         bus1.addDistance(16000);
+
+        com1.addDistance(36000);
         System.out.println();
 
         pcar1.showInfo();
@@ -40,6 +44,11 @@ public class CarManager {
         bus1.showInfo();
         System.out.println(bus1);
         pcar1.maintenanceNeeded(bus1.lMaintDistance);
+        System.out.println();
+
+        com1.showInfo();
+        System.out.println(com1);
+        com1.maintenanceNeeded(com1.lMaintDistance);
         System.out.println();
 
         System.out.println(pcar1.equals(pcar2));

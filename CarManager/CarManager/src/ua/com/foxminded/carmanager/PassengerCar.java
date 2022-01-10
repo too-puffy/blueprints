@@ -11,4 +11,9 @@ public class PassengerCar extends Car {
         if (lMaintDistance > 10_000) System.out.println("Status: maintenance needed.");
         else System.out.println("Status: OK.");
     }
+
+    @Override
+    public void addDistance() {
+
+    }
 }
